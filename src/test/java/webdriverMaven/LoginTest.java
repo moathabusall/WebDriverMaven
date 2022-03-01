@@ -2,6 +2,7 @@ package webdriverMaven;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -17,8 +18,8 @@ public class LoginTest {
 	
 	@BeforeSuite
 	public void setUp() {
-		WebDriverManager.firefoxdriver().setup();
-		driver = new FirefoxDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 	}
 
 	@Test
@@ -30,7 +31,7 @@ public class LoginTest {
 		driver.findElement(By.xpath("//*[@id=\"wrapper\"]/div[1]/div/div[1]/form/div[3]/a")).click();		
 	/*
 	 * 
-	 * added new comments
+	 * added new comments.
 	 * 
 	 */
 	
