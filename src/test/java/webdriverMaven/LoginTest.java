@@ -31,7 +31,7 @@ public class LoginTest {
 		driver.findElement(By.xpath("//*[@id=\"wrapper\"]/div[1]/div/div[1]/form/div[3]/a")).click();		
 	/*
 	 * 
-	 * added new comments....
+	 * added new comments
 	 * 
 	 */
 	
